@@ -1,11 +1,11 @@
 #Thera Chatbot
 
-#%%writefile thera.py
+
 
 #Importing dependencies
 import os
 import streamlit as st
-import googletrans
+#import googletrans
 
 
 
