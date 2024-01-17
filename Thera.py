@@ -5,7 +5,7 @@
 #Importing dependencies
 import os
 import streamlit as st
-#import googletrans
+import googletrans
 
 
 
