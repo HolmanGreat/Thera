@@ -1,10 +1,9 @@
 streamlit
 langchain
 git+https://github.com/huggingface/transformers 
-git+https://github.com/StarkBotsIndustries/googletrans.git 
+googletrans-py39 == 4.2.0
 gtts
 sentencepiece
 transformers
 huggingface-hub
 ctransformers
-googletrans
