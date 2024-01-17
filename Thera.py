@@ -1,6 +1,6 @@
 #Thera Chatbot
 
-%%writefile thera.py
+#%%writefile thera.py
 
 #Importing dependencies
 import os
