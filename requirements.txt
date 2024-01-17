@@ -1,7 +1,7 @@
 streamlit
 langchain
 git+https://github.com/huggingface/transformers 
-googletrans-py39 == 4.2.0
+googletrans-py39 == 4.0.2
 gtts
 sentencepiece
 transformers
