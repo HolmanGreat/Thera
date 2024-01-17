@@ -4,6 +4,6 @@ git+https://github.com/huggingface/transformers
 git+https://github.com/StarkBotsIndustries/googletrans.git 
 gtts
 sentencepiece
-grep transformers
+transformers
 huggingface-hub
 ctransformers
