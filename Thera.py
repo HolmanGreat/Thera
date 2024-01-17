@@ -1,20 +1,5 @@
 #Thera Chatbot
 
-
-#Installing dependencies 
-pip install -q streamlit
-pip install langchain
-pip install git+https://github.com/huggingface/transformers -q
-pip install git+https://github.com/StarkBotsIndustries/googletrans.git -q
-pip install gtts
-pip install sentencepiece
-pip freeze | grep transformers
-
-
-pip install -q huggingface-hub
-pip install -q ctransformers
-
-
 %%writefile thera.py
 
 #Importing dependencies
