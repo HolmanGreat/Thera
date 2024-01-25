@@ -73,11 +73,46 @@ def main():
 
 
     #Contact A Doctor
-    elif app_mode == "🩺Contact A Doctor":
-        st.image("doctor.jpg")
-        st.link_button("💻Speak To A Doctor","https://wallet.clafiya.com/auth/registration")
+    elif app_mode == "🩺 Contact A Doctor":
+         tab1, tab2, tab3, tab4, tab5 = st.tabs(["Women's Health","General Health","Mental Health", "General Health2", "What's New"])
+
+         with tab1:
+             st.header("Women's Health")
+             st.image("/content/HWealth.jpg")
+             st.link_button("⚪🟢 Contact A Doctor", "https://zoiehealth.com/")
+
+         with tab2:
+             st.header("General Health")
+             st.image("/content/together.jpg")
+             st.link_button("🔵🔴 Contacter un médecin", "https://www.clickdoc.ma/")
+             st.link_button("⚪Contact A Doctor", "https://medikea.co.tz/")
+             st.link_button("🟢⚪ Zungumza na Daktari", "https://www.zuri.health/")
+             st.link_button("⚪🟢Contact A Doctor", "https://www.quromedical.co.za/")
 
 
+
+         with tab3:
+             st.header("Mental Health")
+             st.image("/content/coffee.jpg")
+             st.link_button("⚪Contact A Mental Health Physician", "https://www.innersparkrecovery.com")
+             st.link_button("🔵🔴Médecin en santé mentale", "https://www.ahkili.com.tn/")
+             st.link_button("⚪Mental Health Physician", "https://nguvuhealth.com/" )
+
+         with tab4:
+             st.header("General Health2")
+             st.image("/content/wellness.jpg")
+             st.link_button("🟠 Fale com um médico", "https://appysaude.co.ao/")
+             st.link_button("🔵⚪ Contact A Doctor", "https://www.waspito.com")
+             st.link_button("⚪🟢 Contact A Doctor", "https://www.clafiya.com")
+             st.link_button("🔴🔵 التحدث إلى الطبيب ", "https://www.dabadoc.com")
+
+
+
+
+         with tab5:
+             st.header("What's New?")
+             st.image("/content/climb.jpg")
+             
 
 
     elif app_mode == "🏡Home":
