@@ -46,7 +46,7 @@ llm_chain = LLMChain(prompt=prompt, llm=llm)
 
 
 def main():
-    app_mode = st.sidebar.selectbox("Menu",["🏡Home","🩺Contact A Doctor","⚙️Settings","📋About"])
+    app_mode = st.sidebar.selectbox("Menu",["🏡Home","🩺Contact A Doctor","📋About"])
 
 
     st.markdown("<h1 style='text-align: center; color: blue;'>Thera</h1>", unsafe_allow_html=True)
@@ -73,7 +73,7 @@ def main():
 
 
     #Contact A Doctor
-    elif app_mode == "🩺 Contact A Doctor":
+    elif app_mode == "🩺Contact A Doctor":
          tab1, tab2, tab3, tab4, tab5 = st.tabs(["Women's Health","General Health","Mental Health", "General Health2", "What's New"])
 
          with tab1:
