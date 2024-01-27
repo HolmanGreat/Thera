@@ -63,7 +63,7 @@ def main():
         st.write("Thera is your trusted AI companion in women's health. Thera is an AI-powered healthcare chatbot dedicated to enhancing the well-being of women by providing access to reliable health information and connecting them to healthcare professionals when needed.")
         st.image("purple.png", caption = "Empowering Women's Health with AI...Embark on a journey of informed decisions, better health, and well-being. Your health matters, and Thera is here to support you every step of the way.")
 
-        st.image("/content/serene.png", caption = "Together, we can make women's health a priority, and ensure that every woman is empowered with the knowledge and resources she needs to thrive.")
+        st.image("serene.png", caption = "Together, we can make women's health a priority, and ensure that every woman is empowered with the knowledge and resources she needs to thrive.")
         st.write("#Stay Strong... Stay Informed")
 
         st.markdown("""
@@ -78,12 +78,12 @@ def main():
 
          with tab1:
              st.header("Women's Health")
-             st.image("/content/HWealth.jpg")
+             st.image("HWealth.jpg")
              st.link_button("⚪🟢 Contact A Doctor", "https://zoiehealth.com/")
 
          with tab2:
              st.header("General Health")
-             st.image("/content/together.jpg")
+             st.image("together.jpg")
              st.link_button("🔵🔴 Contacter un médecin", "https://www.clickdoc.ma/")
              st.link_button("⚪Contact A Doctor", "https://medikea.co.tz/")
              st.link_button("🟢⚪ Zungumza na Daktari", "https://www.zuri.health/")
@@ -93,14 +93,14 @@ def main():
 
          with tab3:
              st.header("Mental Health")
-             st.image("/content/coffee.jpg")
+             st.image("coffee.jpg")
              st.link_button("⚪Contact A Mental Health Physician", "https://www.innersparkrecovery.com")
              st.link_button("🔵🔴Médecin en santé mentale", "https://www.ahkili.com.tn/")
              st.link_button("⚪Mental Health Physician", "https://nguvuhealth.com/" )
 
          with tab4:
              st.header("General Health2")
-             st.image("/content/wellness.jpg")
+             st.image("wellness.jpg")
              st.link_button("🟠 Fale com um médico", "https://appysaude.co.ao/")
              st.link_button("🔵⚪ Contact A Doctor", "https://www.waspito.com")
              st.link_button("⚪🟢 Contact A Doctor", "https://www.clafiya.com")
@@ -111,7 +111,7 @@ def main():
 
          with tab5:
              st.header("What's New?")
-             st.image("/content/climb.jpg")
+             st.image("climb.jpg")
              
 
 
