@@ -14,11 +14,11 @@ Stay Strong, Stay Informed!
 • Hausa 
 • Igbo 🇳🇬
 • Portuguese 🇲🇿
-• Somali 🇩🇯🇧🇯
+• Somali 🇩🇯
 • Sesotho 🇱🇸🇿🇲🇳🇦
-• Sudanese
+• Sudanese 🇸🇩
 • Swahili 🇰🇪🇺🇬🇧🇮🇸🇴
-• Yoruba 
+• Yoruba 🇧🇯
 • Zulu 🇿🇦🇸🇿
 
 
