@@ -4,16 +4,16 @@ Stay Strong, Stay Informed!
 
 ✨Thera, the healthcare chatbot, is your go-to source for accurate health information in 10+ African languages🌍.
 
-• Amharic
-• Arabic 🇹🇳
-• English 
+• Amharic 🇪🇹
+• Arabic 🇪🇬🇹🇳
+• English 🇧🇼
 • French 🇲🇦
-• Hausa
-• Igbo
+• Hausa 🇳🇬
+• Igbo 🇳🇬
 • Somali
-• Sesotho
+• Sesotho 🇱🇸🇿🇲🇳🇦
 • Sudanese
-• Swahili 🇰🇪
+• Swahili 🇰🇪🇺🇬
 • Yoruba 
 • Zulu 🇿🇦
 
