@@ -4,14 +4,14 @@ Stay Strong, Stay Informed!
 
 ✨Thera, the healthcare chatbot, is your go-to source for accurate health information in 10+ African languages🌍.
 
-🚫*NB: The languages spoken in Africa is diverse, country flags beside the respective languages stated below, do not depict the only language spoken in the respective countries*
+🚫*NB: The languages spoken in Africa is diverse, country flags beside the respective languages stated below, DOES NOT depict the only language(s), nor lingua franca spoken in the respective countries*
 
 
 • Amharic 🇪🇹
 • Arabic 🇪🇬🇹🇳🇩🇿🇱🇾
-• English 🇧🇼🇲🇼🇸🇱🇹🇿🇷🇼
-• French 🇲🇦🇨🇮🇹🇬🇨🇩🇸🇳
-• Hausa 
+• English 🇧🇼🇲🇼🇸🇱🇹🇿🇷🇼🇬🇭
+• French 🇲🇦🇨🇮🇹🇬🇨🇩🇸🇳🇧🇫🇨🇲🇹🇩
+• Hausa 🇳🇪
 • Igbo 🇳🇬
 • Portuguese 🇲🇿
 • Somali 🇩🇯
