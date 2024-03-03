@@ -7,3 +7,4 @@ sentencepiece
 transformers
 huggingface-hub
 ctransformers
+qdrant-client 
