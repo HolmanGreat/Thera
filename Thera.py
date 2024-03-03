@@ -41,6 +41,36 @@ dataSplit = RecursiveCharacterTextSplitter(chunk_size = 2000, chunk_overlap = 20
 docs = dataSplit.split_documents(data)
 
 
+#Creating embeddings
+
+embeddings= HuggingFaceInferenceAPIEmbeddings (
+             api_key = "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", model_name="hkunlp/instructor-xl")
+
+
+
+#Cloud VectorDB
+
+vectorDB = Qdrant.from_documents(
+    doc_txt,embeddings, url = qdrant_url,api_key = qdrant_key,collection_name = "Epsilon")
+
+retriever = vectorDB.as_retriever()
+llm = HuggingFaceHub(repo_id="HuggingFaceH4/zephyr-7b-beta",
+                     model_kwargs = "temperature":0.1, "max_new_tokens":512,"return_full_text":False)
+#Prompt
+
+prompt = """
+<|system|>
+Answer the question based on your knowledge. Use the following context to help:
+
+{context}
+
+</s>
+<|user|>
+{query}
+</s>
+<|assistant|>
+
+ """
 
 
 
