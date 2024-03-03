@@ -1,11 +1,11 @@
 streamlit
 langchain
-git+https://github.com/huggingface/transformers 
+#git+https://github.com/huggingface/#transformers 
 googletrans-py39 == 4.0.2
 gtts
-sentencepiece
-transformers
-huggingface-hub
-ctransformers
+#sentencepiece
+#transformers
+#huggingface-hub
+#ctransformers
 qdrant-client 
 unstructured[all-docs]
