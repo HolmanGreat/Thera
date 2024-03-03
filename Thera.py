@@ -31,6 +31,21 @@ from langchain.chains import RetrievalQA
 os.environ["HUGGINGFACE_API_TOKEN"] = "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"
 
 
+qdrant_url = "https://fd0cc94e-64a9-4e4d-8404-455d3004fffd.us-east4-0.gcp.cloud.qdrant.io"
+qdrant_key = "WOjkczHzMHaENoQQYz6QQbQMqWaA_j7balkkI1jmqQB7AGT69NFoew"
+
+text_data = UnstructuredFileLoader("Gynae.txt")
+data = text_data.load()
+
+dataSplit = RecursiveCharacterTextSplitter(chunk_size = 2000, chunk_overlap = 200)
+docs = dataSplit.split_documents(data)
+
+
+
+
+
+
+
 #SELECTING MODEL
 #llm = CTransformers(
  #   model="TheBloke/zephyr-7B-beta-GGUF", callbacks=[StreamingStdOutCallbackHandler()]
