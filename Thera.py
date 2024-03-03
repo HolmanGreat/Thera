@@ -55,7 +55,7 @@ vectorDB = Qdrant.from_documents(
 
 retriever = vectorDB.as_retriever()
 llm = HuggingFaceHub(repo_id="HuggingFaceH4/zephyr-7b-beta",
-                     model_kwargs = "temperature":0.1, "max_new_tokens":512,"return_full_text":False)
+                     model_kwargs = {"temperature":0.1, "max_new_tokens":512,"return_full_text":False})
 #Prompt
 
 prompt = """
