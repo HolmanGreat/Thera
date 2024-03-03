@@ -72,7 +72,7 @@ Answer the question based on your knowledge. Use the following context to help:
 
  """
 
-
+QA = RetrievalQA.from_chain_type(llm=llm, chain_type = "stuff", retriever=retriever)
 
 
 
@@ -212,8 +212,8 @@ def main():
                 #Setup Callback Handler For streaming response
                 #st_callback = StreamlitCallbackHandler(st.container())
 
-                #Pass extracted_english_text to LLM
-                response_in_english = llm_chain.run(extracted_english_text)
+                #Pass extracted_english_text to LLM #llm_chain.run
+                response_in_english = QA.run(extracted_english_text)
 
 
                 response_in_userlang = translator.translate(response_in_english, src = "en", dest = default_lang_detected)
