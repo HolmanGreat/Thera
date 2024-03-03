@@ -14,31 +14,38 @@ from gtts import gTTS
 
 
 # Importing Langchain Modules
-from langchain_community.llms import CTransformers
-from langchain.chains import LLMChain
-from langchain.prompts import PromptTemplate
-from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
+#from langchain_community.llms import CTransformers
+#from langchain.chains import LLMChain
+#from langchain.prompts import PromptTemplate
+#from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 
+
+from langchain_community.document_loaders import UnstructuredFileLoader
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_community.vectorstores import Qdrant
+from langchain_community.llms import HuggingFaceHub
+from langchain_community.embeddings import HuggingFaceInferenceAPIEmbeddings
+from langchain.chains import RetrievalQA
 
 #HUGGINGFACE CREDENTIALS
 os.environ["HUGGINGFACE_API_TOKEN"] = "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"
 
 
 #SELECTING MODEL
-llm = CTransformers(
-    model="TheBloke/zephyr-7B-beta-GGUF", callbacks=[StreamingStdOutCallbackHandler()]
-)
+#llm = CTransformers(
+ #   model="TheBloke/zephyr-7B-beta-GGUF", callbacks=[StreamingStdOutCallbackHandler()]
+#)
 
 
 
 
-template = """Question: {question}
+#template = """Question: {question}
 
-Answer:"""
+#Answer:"""
 
-prompt = PromptTemplate(template=template, input_variables=["question"])
+#prompt = PromptTemplate(template=template, input_variables=["question"])
 
-llm_chain = LLMChain(prompt=prompt, llm=llm)
+#llm_chain = LLMChain(prompt=prompt, llm=llm)
 
 
 
