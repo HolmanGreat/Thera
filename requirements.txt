@@ -8,3 +8,4 @@ transformers
 huggingface-hub
 ctransformers
 qdrant-client 
+ "unstructured[all-docs]"
