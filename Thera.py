@@ -51,7 +51,7 @@ embeddings= HuggingFaceInferenceAPIEmbeddings (
 #Cloud VectorDB
 
 vectorDB = Qdrant.from_documents(
-    doc_txt,embeddings, url = qdrant_url,api_key = qdrant_key,collection_name = "Epsilon")
+    docs,embeddings, url = qdrant_url,api_key = qdrant_key,collection_name = "Epsilon")
 
 retriever = vectorDB.as_retriever()
 llm = HuggingFaceHub(repo_id="HuggingFaceH4/zephyr-7b-beta",
