@@ -13,19 +13,13 @@ from googletrans import Translator
 from gtts import gTTS
 
 
-# Importing Langchain Modules
-#from langchain_community.llms import CTransformers
-#from langchain.chains import LLMChain
-#from langchain.prompts import PromptTemplate
-#from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
+Importing Langchain Modules
+from langchain_community.llms import CTransformers
+from langchain.chains import LLMChain
+from langchain.prompts import PromptTemplate
+from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 
 
-from langchain_community.document_loaders import TextLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_community.vectorstores import Qdrant
-from langchain_community.llms import HuggingFaceHub
-from langchain_community.embeddings import HuggingFaceInferenceAPIEmbeddings
-from langchain.chains import RetrievalQA
 
 #HUGGINGFACE CREDENTIALS
 os.environ["HUGGINGFACE_API_TOKEN"] = "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"
@@ -34,11 +28,8 @@ os.environ["HUGGINGFACE_API_TOKEN"] = "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"
 qdrant_url = "https://fd0cc94e-64a9-4e4d-8404-455d3004fffd.us-east4-0.gcp.cloud.qdrant.io"
 qdrant_key = "WOjkczHzMHaENoQQYz6QQbQMqWaA_j7balkkI1jmqQB7AGT69NFoew"
 
-text_data = TextLoader("Gynae.txt")
-data = text_data.load()
-
-dataSplit = RecursiveCharacterTextSplitter(chunk_size = 2000, chunk_overlap = 200)
-docs = dataSplit.split_documents(data)
+#text_data = TextLoader("Gynae.txt")
+#data = text_data.load()
 
 
 #Creating embeddings
@@ -48,49 +39,24 @@ embeddings= HuggingFaceInferenceAPIEmbeddings (
 
 
 
-#Cloud VectorDB
-
-vectorDB = Qdrant.from_documents(
-    docs,embeddings, url = qdrant_url,api_key = qdrant_key,collection_name = "Epsilon")
-
-retriever = vectorDB.as_retriever()
-llm = HuggingFaceHub(repo_id="HuggingFaceH4/zephyr-7b-beta",
-                     model_kwargs = {"temperature":0.1, "max_new_tokens":512,"return_full_text":False})
-#Prompt
-
-prompt = """
-<|system|>
-Answer the question based on your knowledge. Use the following context to help:
-
-{context}
-
-</s>
-<|user|>
-{query}
-</s>
-<|assistant|>
-
- """
-
-QA = RetrievalQA.from_chain_type(llm=llm, chain_type = "stuff", retriever=retriever)
 
 
 
-#SELECTING MODEL
-#llm = CTransformers(
- #   model="TheBloke/zephyr-7B-beta-GGUF", callbacks=[StreamingStdOutCallbackHandler()]
-#)
+SELECTING MODEL
+llm = CTransformers(
+    model="TheBloke/zephyr-7B-beta-GGUF", callbacks=[StreamingStdOutCallbackHandler()]
+)
 
 
 
 
-#template = """Question: {question}
+template = """Question: {question}
 
-#Answer:"""
+Answer:"""
 
-#prompt = PromptTemplate(template=template, input_variables=["question"])
+prompt = PromptTemplate(template=template, input_variables=["question"])
 
-#llm_chain = LLMChain(prompt=prompt, llm=llm)
+llm_chain = LLMChain(prompt=prompt, llm=llm)
 
 
 
@@ -213,7 +179,7 @@ def main():
                 #st_callback = StreamlitCallbackHandler(st.container())
 
                 #Pass extracted_english_text to LLM #llm_chain.run
-                response_in_english = QA.run(extracted_english_text)
+                response_in_english = llm_chain.run(extracted_english_text)
 
 
                 response_in_userlang = translator.translate(response_in_english, src = "en", dest = default_lang_detected)
