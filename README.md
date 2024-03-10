@@ -27,5 +27,10 @@ Stay Strong, Stay Informed!
 More than just information, Thera acts as a catalyst⚡, linking users with healthcare professionals for timely support🛰️. Dive into a world where knowledge meets connectivity☁️, ensuring your health journey is both informed and supported. Join us in redefining healthcare accessibility with Thera✨ – where understanding meets action! 
 
 
+Get started with Thera!
+[https://therachat.streamlit.app/](#)
+
 #StayStrong💙
 #StayInformed🚀
+
+
