@@ -17,6 +17,7 @@ from gtts import gTTS
 from langchain_community.llms import CTransformers
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
+from langchain_community.embeddings import HuggingFaceInferenceAPIEmbeddings
 from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 
 
