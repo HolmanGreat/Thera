@@ -39,9 +39,6 @@ embeddings= HuggingFaceInferenceAPIEmbeddings (
 
 
 
-
-
-
 #SELECTING MODEL
 llm = CTransformers(
     model="TheBloke/zephyr-7B-beta-GGUF", callbacks=[StreamingStdOutCallbackHandler()]
