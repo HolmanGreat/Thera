@@ -35,8 +35,7 @@ qdrant_key = "WOjkczHzMHaENoQQYz6QQbQMqWaA_j7balkkI1jmqQB7AGT69NFoew"
 
 #Creating embeddings
 
-embeddings= HuggingFaceInferenceAPIEmbeddings (
-             api_key = "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", model_name="hkunlp/instructor-xl")
+embeddings= HuggingFaceInferenceAPIEmbeddings(api_key = "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", model_name="hkunlp/instructor-xl")
 
 
 
