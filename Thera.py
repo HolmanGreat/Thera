@@ -17,7 +17,7 @@ from gtts import gTTS
 from langchain_community.llms import CTransformers
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
-from langchain_community.embeddings import HuggingFaceInferenceAPIEmbeddings
+from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 
 
@@ -35,7 +35,7 @@ qdrant_key = "WOjkczHzMHaENoQQYz6QQbQMqWaA_j7balkkI1jmqQB7AGT69NFoew"
 
 #Creating embeddings
 
-embeddings= HuggingFaceInferenceAPIEmbeddings(api_key = "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", model_name="hkunlp/instructor-xl")
+embeddings= HuggingFaceEmbeddings(api_key = "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", model_name="hkunlp/instructor-xl")
 
 
 
