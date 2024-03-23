@@ -6,6 +6,6 @@ gtts
 #sentencepiece
 transformers
 #huggingface-hub
-#ctransformers
+ctransformers
 qdrant-client 
 unstructured[all-docs]
