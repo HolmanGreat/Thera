@@ -6,7 +6,7 @@ gtts
 llama-cpp-python
 #sentencepiece
 #transformers
-#huggingface-hub
+huggingface-hub
 #ctransformers
 #qdrant-client 
 #unstructured[all-docs]
