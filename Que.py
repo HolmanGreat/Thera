@@ -2,7 +2,7 @@
 import os
 import streamlit as st
 import googletrans
-
+import ctransformers 
 
 
 from googletrans import Translator
