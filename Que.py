@@ -62,7 +62,7 @@ def main():
         """)
 
     #Contact A Doctor
-    elif app_mode == "🩺Contact A Doctor"
+    elif app_mode == "🩺Contact A Doctor":
         tab1, tab2 = st.tabs(["Contact A Doctor", "What's New"])
 
          with tab1:
