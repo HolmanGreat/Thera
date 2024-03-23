@@ -3,9 +3,9 @@ langchain
 #git+https://github.com/huggingface/#transformers 
 googletrans-py39 == 4.0.2
 gtts
-sentencepiece
+#sentencepiece
 transformers
 #huggingface-hub
-ctransformers
+#ctransformers
 qdrant-client 
 unstructured[all-docs]
