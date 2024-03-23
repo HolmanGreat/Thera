@@ -117,16 +117,8 @@ def main():
                         {"role": "user", "content": response_in_english}
                      ]
                 )
-
-
                 # Accessing the 'content' key within the 'message' dictionary
                 response_content = output['choices'][0]['message']['content']
-
-               
-
-
-                
-
                 response_in_userlang = translator.translate(response_in_english, src = "en", dest = default_lang_detected)
                 output_text = response_in_userlang.text
                 st.markdown(output_text)
