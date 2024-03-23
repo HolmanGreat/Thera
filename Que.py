@@ -67,7 +67,7 @@ def main():
 
         with tab1:
             st.header("Speak To A Doctor")
-            st.image("doctor.png")
+            st.image("doctor.jpg")
             contact= st.selectbox("Language",["🤍English","💙Francais/Arabic","💛Portuguese","❤️Swahili"])
             if contact == "🤍English":
                 st.link_button("https://zoiehealth.com/")
