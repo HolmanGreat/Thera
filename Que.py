@@ -71,7 +71,7 @@ def main():
             st.image("istockphoto-1679775124-612x612.jpg")
             contact= st.selectbox("Language",["🤍English","💙Francais/Arabic","💛Portuguese","❤️Swahili"])
             if contact == "🤍English":
-                st.link_button("https://zoiehealth.com/")
+                st.link_button("Contact A Doctor", "https://zoiehealth.com/")
             elif contact == "💙Francais/Arabic":
                 st.link_button("Contacter un médecin", "https://www.ahkili.com.tn/")
             elif contact == "💛Portuguese":
