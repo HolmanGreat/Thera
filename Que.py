@@ -25,8 +25,10 @@ os.environ["HUGGINGFACE_API_TOKEN"] = "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"
 
 #SELECTING MODEL
 llm = Llama.from_pretrained(
-    repo_id="BioMistral/BioMistral-7B-GGUF",
-    filename="ggml-model-Q4_K_M.gguf")
+    repo_id="Qwen/Qwen1.5-0.5B-Chat-GGUF",
+    filename="*q8_0.gguf")
+    #repo_id="BioMistral/BioMistral-7B-GGUF",
+    #filename="ggml-model-Q4_K_M.gguf")
 
 
 
