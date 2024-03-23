@@ -64,11 +64,11 @@ def main():
 
     #About Page
     if app_mode == "📋About":
-        st.image("/content/Thera.png",caption ="#Stay Strong...Stay Informed")
+        st.image("Thera.png",caption ="#Stay Strong...Stay Informed")
         st.write("Thera is your trusted AI companion in women's health. Thera is an AI-powered healthcare chatbot dedicated to enhancing the well-being of women by providing access to reliable health information and connecting them to healthcare professionals when needed.")
-        st.image("/content/purple.png", caption = "Empowering Women's Health with AI...Embark on a journey of informed decisions, better health, and well-being. Your health matters, and Thera is here to support you every step of the way.")
+        st.image("purple.png", caption = "Empowering Women's Health with AI...Embark on a journey of informed decisions, better health, and well-being. Your health matters, and Thera is here to support you every step of the way.")
 
-        st.image("/content/serene.png", caption = "Together, we can make women's health a priority, and ensure that every woman is empowered with the knowledge and resources she needs to thrive.")
+        st.image("serene.png", caption = "Together, we can make women's health a priority, and ensure that every woman is empowered with the knowledge and resources she needs to thrive.")
         st.write("#Stay Strong... Stay Informed")
 
         st.markdown("""
@@ -78,7 +78,7 @@ def main():
 
     #Contact A Doctor
     elif app_mode == "🩺Contact A Doctor":
-        st.image("/content/doctor.png")
+        st.image("doctor.png")
         st.link_button("💻Speak To A Doctor","https://wallet.clafiya.com/auth/registration")
     elif app_mode == "🏡Home":
         #Initialize chat history
