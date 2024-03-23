@@ -73,11 +73,11 @@ def main():
             if contact == "🤍English":
                 st.link_button("Contact A Doctor", "https://zoiehealth.com/")
             elif contact == "💙Francais/Arabic":
-                st.link_button("Contacter un médecin", "https://www.ahkili.com.tn/")
+                st.link_button("Contacter un médecin/التحدث إلى الطبيب", "https://www.ahkili.com.tn/")
             elif contact == "💛Portuguese":
-                st.link_button("Contact A Doctor", "https://appysaude.co.ao/")
+                st.link_button("Fale com um médico", "https://appysaude.co.ao/")
             elif contact == "❤️Swahili":
-                st.link_button("https://medikea.co.tz/")
+                st.link_button("Zungumza na Daktari","https://medikea.co.tz/")
         
         with tab2:
             st.header("What's New")
