@@ -119,8 +119,8 @@ def main():
                 )
 
 
-               # Accessing the 'content' key within the 'message' dictionary
-               response_content = output['choices'][0]['message']['content']
+                # Accessing the 'content' key within the 'message' dictionary
+                response_content = output['choices'][0]['message']['content']
 
                
 
