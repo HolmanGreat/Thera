@@ -119,10 +119,10 @@ def main():
                 )
                 # Accessing the 'content' key within the 'message' dictionary
                 response_content = output['choices'][0]['message']['content']
-                response_in_userlang = translator.translate(response_in_english, src = "en", dest = default_lang_detected)
+                response_in_userlang = translator.translate(response_content, src = "en", dest = default_lang_detected)
                 output_text = response_in_userlang.text
                 st.markdown(output_text)
-
+                
 
             #Add ChatBot's Response To Chat History
             st.session_state.messages.append({"role":"assistant","content":output_text})
