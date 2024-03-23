@@ -62,9 +62,24 @@ def main():
         """)
 
     #Contact A Doctor
-    elif app_mode == "🩺Contact A Doctor":
-        st.image("doctor.png")
-        st.link_button("💻Speak To A Doctor","https://wallet.clafiya.com/auth/registration")
+    elif app_mode == "🩺Contact A Doctor"
+        tab1, tab2 = st.tabs(["Contact A Doctor", "What's New"])
+
+         with tab1:
+             st.header("Speak To A Doctor")
+             st.image("doctor.png")
+             contact= st.selectbox("Language",["🤍English","💙Francais/Arabic","💛Portuguese","❤️Swahili"])
+             elif contact == "💙Francais/Arabic":
+                 st.link_button("Contacter un médecin", "https://www.clickdoc.ma/")
+             elif contact == "💛Portuguese":
+                 st.link_button("Contact A Doctor", "https://medikea.co.tz/")
+             elif contact == "❤️Swahili":
+                 st.link_button("https://www.zuri.health/")
+        
+with tab2:
+             st.header("What's New")
+             st.image("climb.jpg")
+             
     elif app_mode == "🏡Home":
         #Initialize chat history
         if "messages" not in st.session_state:
