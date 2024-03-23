@@ -81,8 +81,9 @@ def main():
         
         with tab2:
             st.header("What's New")
-            st.image("climb.jpg")
-             
+            st.image("Screenshot_2024_0323_223748.png", caption = "💖#IWD2024")
+            st.write("Wishing all the incredible women out there a Happy International Women's Day! May this day be filled with recognition, appreciation, and inspiration as we honor the achievements and resilience of women worldwide. Here's to breaking barriers, shattering stereotypes, and creating a brighter, more inclusive future for all. 🌟👩‍🎓👩‍⚕️👩‍🔬👩‍💼👩‍🔧👩‍🌾👩‍🏫👩‍🎨👩‍✈️👩‍🚀👩‍⚖️🌍")
+            
     elif app_mode == "🏡Home":
         #Initialize chat history
         if "messages" not in st.session_state:
