@@ -76,7 +76,7 @@ def main():
              elif contact == "❤️Swahili":
                  st.link_button("https://www.zuri.health/")
         
-with tab2:
+         with tab2:
              st.header("What's New")
              st.image("climb.jpg")
              
