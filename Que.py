@@ -16,7 +16,7 @@ from gtts import gTTS
 #from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 
 from llama_cpp import Llama
-import huggingface-hub
+#import huggingface-hub
 
 
 #HUGGINGFACE CREDENTIALS
