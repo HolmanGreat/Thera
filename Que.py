@@ -61,13 +61,14 @@ def main():
         We would like to hear from you 🌍 (https://forms.gle/8ZGhZ8Lkkcq43dyG7)
         """)
 
+   
     #Contact A Doctor
     elif app_mode == "🩺Contact A Doctor":
         tab1, tab2 = st.tabs(["Contact A Doctor", "What's New"])
 
         with tab1:
             st.header("Speak To A Doctor")
-            st.image("doctor.jpg")
+            st.image("istockphoto-1679775124-612x612.jpg")
             contact= st.selectbox("Language",["🤍English","💙Francais/Arabic","💛Portuguese","❤️Swahili"])
             if contact == "🤍English":
                 st.link_button("https://zoiehealth.com/")
