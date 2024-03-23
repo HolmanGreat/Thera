@@ -35,7 +35,7 @@ Answer:"""
 
 prompt = PromptTemplate(template=template, input_variables=["question"])
 
-llm_chain = LLMChain(prompt=prompt, llm=llm)
+#llm_chain = LLMChain(prompt=prompt, llm=llm)
 
 
 
@@ -127,8 +127,8 @@ def main():
                 #st_callback = StreamlitCallbackHandler(st.container())
 
                 #Pass extracted_english_text to LLM
-                response_in_english = llm_chain.run(extracted_english_text)
-
+                #response_in_english = llm_chain.run(extracted_english_text)
+                response_in_english = llm(extracted_english_text)
 
                 response_in_userlang = translator.translate(response_in_english, src = "en", dest = default_lang_detected)
                 output_text = response_in_userlang.text
