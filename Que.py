@@ -10,7 +10,7 @@ from gtts import gTTS
 
 
 # Importing Langchain Modules
-from langchain_community.llms import CTransformers
+from langchain_community.llms import ctransformers
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
 from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
@@ -21,7 +21,7 @@ os.environ["HUGGINGFACE_API_TOKEN"] = "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"
 
 
 #SELECTING MODEL
-llm = CTransformers(
+llm = ctransformers(
     model="TheBloke/zephyr-7B-beta-GGUF", callbacks=[StreamingStdOutCallbackHandler()]
 )
 
