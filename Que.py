@@ -21,9 +21,12 @@ os.environ["HUGGINGFACE_API_TOKEN"] = "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"
 
 
 #SELECTING MODEL
-llm = ctransformers(model="TheBloke/zephyr-7B-beta-GGUF", callbacks=[StreamingStdOutCallbackHandler()])
+#llm = ctransformers(model="TheBloke/zephyr-7B-beta-GGUF", callbacks=[StreamingStdOutCallbackHandler()])
 
+from ctransformers import AutoModelForCausalLM
 
+# Set gpu_layers to the number of layers to offload to GPU. Set to 0 if no GPU acceleration is available on your system.
+llm = AutoModelForCausalLM.from_pretrained("TheBloke/zephyr-7B-beta-GGUF", model_file="zephyr-7b-beta.Q4_K_M.gguf", model_type="mistral", gpu_layers=0)
 
 
 template = """Question: {question}
