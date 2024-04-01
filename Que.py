@@ -20,7 +20,7 @@ from llama_cpp import Llama
 
 
 #HUGGINGFACE CREDENTIALS
-os.environ["HUGGINGFACE_API_TOKEN"] = "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"
+
 
 
 #SELECTING MODEL
