@@ -20,8 +20,8 @@ from llama_cpp import Llama
 
 
 #HUGGINGFACE CREDENTIALS
-os.environ["HUGGINGFACE_API_TOKEN"] = "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"
-
+#os.environ["HUGGINGFACE_API_TOKEN"] = "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"
+headers = { "authorization":st.secrets["auth_token"], "content-type": "application/json"}
 
 #SELECTING MODEL
 llm = Llama.from_pretrained(
