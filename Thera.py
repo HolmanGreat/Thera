@@ -80,8 +80,8 @@ def main():
         
         with tab2:
             st.header("What's New")
-            st.image("Screenshot_2024_0323_223748.png", caption = "💖#IWD2024")
-            st.write("Wishing all the incredible women out there a Happy International Women's Day! May this day be filled with recognition, appreciation, and inspiration as we honor the achievements and resilience of women worldwide. Here's to breaking barriers, shattering stereotypes, and creating a brighter, more inclusive future for all. 🌟👩‍🎓👩‍⚕️👩‍🔬👩‍💼👩‍🔧👩‍🌾👩‍🏫👩‍🎨👩‍✈️👩‍🚀👩‍⚖️🌍")
+            st.image("world-health-day-2024-history-significance-2024-04-53d4431b3b91297c2868e9a9e07ac0fa.jpg", caption = "💚#Your Health...Your Right")
+            st.write("🌍 Today, we celebrate World Health Day with the theme: 'Your Health. Your Right.' 🌟In a world full of uncertainties, one thing remains constant: your right to good health! 💪 This year, let's reaffirm our commitment to prioritizing our health and advocating for accessible, equitable healthcare for all. Whether it's staying active, eating well, or seeking medical care when needed, remember that your health matters, and it's your fundamental right.Let's work together to build a healthier, happier future for everyone. 💙 #WorldHealthDay #YourHealthYourRight #HealthForAll#StayInformed_StayStrong")
             
     elif app_mode == "🏡Home":
         #Initialize chat history
