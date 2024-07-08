@@ -23,13 +23,18 @@ from llama_cpp import Llama
 headers = { "authorization":st.secrets["auth_token"], "content-type": "application/json"}
 
 #SELECTING MODEL
+"""
 llm = Llama.from_pretrained(
     repo_id="Qwen/Qwen1.5-0.5B-Chat-GGUF",
     filename="*q8_0.gguf")
     #repo_id="BioMistral/BioMistral-7B-GGUF",
     #filename="ggml-model-Q4_K_M.gguf")
-
-
+"""
+llm = Llama.from_pretrained(
+    repo_id="Qwen/Qwen2-0.5B-Instruct-GGUF",
+    filename="*q8_0.gguf",
+    verbose=False
+)
 
 
 #User Interface
